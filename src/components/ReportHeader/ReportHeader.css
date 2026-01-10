@@ -1,0 +1,80 @@
+.report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.report-header__title {
+  font-size: 26px;
+  font-weight: 300;
+  color: #9ca3af;
+  letter-spacing: -0.3px;
+}
+
+.report-header__timeframe {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle__track {
+  width: 40px;
+  height: 22px;
+  background: var(--color-gray-200);
+  border-radius: 11px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.toggle__track--active {
+  background: var(--color-black);
+}
+
+.toggle__thumb {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle__thumb--active {
+  left: 20px;
+}
+
+.report-header__timeframe-label {
+  font-size: 13px;
+  color: var(--color-gray-500);
+}
+
+.report-header__date-range {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  transition: background 0.2s ease;
+}
+
+.report-header__date-range:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.report-header__date-range svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-gray-400);
+}

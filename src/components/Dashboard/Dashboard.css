@@ -1,0 +1,121 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 264px;
+  padding: 28px 36px;
+  min-height: 100vh;
+  max-width: calc(100vw - 264px);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.main-grid__left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.main-grid__right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* Shared card styles */
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card__header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray-500);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  transition: background 0.2s ease;
+}
+
+.sort-btn:hover {
+  background: var(--color-gray-100);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--color-gray-500);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  transition: background 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: var(--color-gray-100);
+  color: var(--color-black);
+}
+
+.table-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+/* Responsive adjustments for >=1280px */
+@media (min-width: 1280px) {
+  .main-content {
+    padding: 28px 40px;
+  }
+
+  .main-grid {
+    gap: 28px;
+  }
+}

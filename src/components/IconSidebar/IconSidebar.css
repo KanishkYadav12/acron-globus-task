@@ -1,0 +1,131 @@
+.icon-sidebar {
+  width: 60px;
+  background: var(--color-bg);
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+}
+
+.icon-sidebar__logo {
+  width: 36px;
+  height: 36px;
+  background: var(--color-black);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.icon-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.icon-sidebar__nav-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-sidebar__notification-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon-sidebar__notification-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(139, 21, 56, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(139, 21, 56, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 21, 56, 0);
+  }
+}
+
+.icon-sidebar__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-400);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-sidebar__btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--color-gray-500);
+}
+
+.icon-sidebar__btn--muted {
+  color: var(--color-gray-300);
+}
+
+.icon-sidebar__btn--active {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(139, 21, 56, 0.3);
+}
+
+.icon-sidebar__btn--active:hover {
+  background: var(--color-primary-light);
+  color: white;
+}
+
+.icon-sidebar__btn-with-badge {
+  position: relative;
+}
+
+.icon-sidebar__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

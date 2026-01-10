@@ -1,0 +1,39 @@
+/* Sales Dynamic Card */
+.sd-card {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 18px 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.sd-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.sd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md, 12px);
+}
+
+.sd-header__weeks {
+  display: flex;
+  gap: var(--spacing-lg, 20px);
+}
+
+.sd-header__week {
+  font-size: var(--font-size-2xs, 11px);
+  color: var(--color-text-light, #9ca3af);
+  font-weight: 500;
+}
+
+.sd-chart {
+  height: 80px;
+  margin-bottom: var(--spacing-lg, 20px);
+  padding: var(--spacing-xs, 4px) 0;
+}
+
+.sd-chart svg {
+  overflow: visible;
+}

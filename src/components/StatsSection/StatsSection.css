@@ -1,0 +1,304 @@
+.stats-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+
+/* Revenue Section - NOT a card, just text on background */
+.revenue-section {
+  min-width: 220px;
+  max-width: 250px;
+  flex-shrink: 0;
+  padding: 8px 16px 8px 0;
+}
+
+.revenue-section__label {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.revenue-section__value-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.revenue-section__dollar {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-black);
+  letter-spacing: -0.5px;
+}
+
+.revenue-section__cents {
+  font-size: 20px;
+  font-weight: 600;
+  color: #b0b0b0;
+}
+
+.revenue-section__badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.revenue-section__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #d1fae5;
+  color: #059669;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.revenue-section__badge svg {
+  width: 10px;
+  height: 10px;
+}
+
+.revenue-section__prev {
+  font-size: 11px;
+  color: var(--color-gray-400);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.revenue-section__prev-date {
+  color: var(--color-gray-500);
+}
+
+.revenue-section__prev svg {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+/* Stats Card - Separate cards for Top Sales & Best Deal */
+.stats-card {
+  border-radius: var(--radius-xl);
+  padding: 14px 18px;
+  min-width: 120px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.stats-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.stats-card--white {
+  background: var(--color-card);
+}
+
+.stats-card--black {
+  background: var(--color-black);
+  color: white;
+}
+
+.stats-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-card__title {
+  font-size: 11px;
+  color: var(--color-gray-400);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.stats-card--black .stats-card__title {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stats-card__star {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stats-card__star:hover {
+  color: var(--color-yellow);
+}
+
+.stats-card__value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.stats-card--black .stats-card__value {
+  color: white;
+}
+
+.stats-card__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-gray-500);
+  margin-top: auto;
+}
+
+.stats-card__subtitle svg {
+  width: 10px;
+  height: 10px;
+  color: var(--color-gray-400);
+}
+
+.stats-card__avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+}
+
+.stats-card__avatar--green {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.stats-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 12px;
+}
+
+.stats-card__action-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stats-card__action-btn:hover {
+  background: var(--color-gray-100);
+}
+
+.stats-card__action-btn svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Stats Grid - Deals, Value, Win rate */
+.stats-grid {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Stat Card */
+.stat-card {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 12px 16px;
+  flex: 1;
+  min-width: 80px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Value card with RED border only */
+.stat-card--bordered {
+  border: 2px solid var(--color-primary);
+  background: var(--color-card);
+}
+
+.stat-card--bordered .stat-card__value {
+  color: var(--color-primary);
+}
+
+.stat-card--bordered .stat-card__change--positive {
+  color: var(--color-primary);
+}
+
+/* Highlighted style - NOT used now but keeping for reference */
+.stat-card--highlighted {
+  background: var(--color-primary);
+  color: white;
+}
+
+.stat-card--highlighted:hover {
+  background: var(--color-primary-light);
+}
+
+.stat-card__title {
+  font-size: 11px;
+  color: var(--color-gray-400);
+  margin-bottom: 4px;
+}
+
+.stat-card--highlighted .stat-card__title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.stat-card__value {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+
+.stat-card--highlighted .stat-card__value {
+  color: white;
+}
+
+.stat-card__change {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  margin-top: auto;
+}
+
+.stat-card__change svg {
+  width: 10px;
+  height: 10px;
+}
+
+.stat-card__change--positive {
+  color: var(--color-green);
+}
+
+.stat-card--highlighted .stat-card__change--positive {
+  color: #86efac;
+}
+
+.stat-card__change--negative {
+  color: var(--color-red);
+}
