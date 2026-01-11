@@ -4,7 +4,7 @@
   /* Colors - Exact match to reference */
   --color-primary: #8b1538;
   --color-primary-light: #a91d47;
-  --color-bg: #f5f3f0;
+  --color-bg: #f7f5f3;
   --color-bg-alt: #faf9f7;
   --color-white: #ffffff;
   --color-card: #ffffff;
@@ -39,6 +39,7 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
+  --radius-2xl: 20px;
   --radius-full: 9999px;
 
   /* Shadows - Subtle and clean */
@@ -46,6 +47,7 @@
   --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.06);
   --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-container: 0 20px 40px rgba(0, 0, 0, 0.06);
 
   /* Font sizes */
   --text-xs: 10px;

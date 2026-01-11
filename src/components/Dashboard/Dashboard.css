@@ -1,16 +1,29 @@
 .dashboard {
   display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+}
+
+.dashboard-layout {
+  display: flex;
   min-height: 100vh;
-  background: var(--color-bg);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.content-wrapper {
+  flex: 1;
+  margin-left: 264px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 24px 24px;
 }
 
 .main-content {
   flex: 1;
-  margin-left: 264px;
+  margin-top: 20px;
   padding: 28px 36px;
-  min-height: 100vh;
-  max-width: calc(100vw - 264px);
+  background: var(--color-white);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-container);
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -19,20 +32,42 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: 24px;
+  align-items: stretch;
 }
 
 .main-grid__left-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+  min-width: 0;
+  background: #fdfcfb;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Platform row container - two cards side by side */
+.platform-row-container {
+  display: flex;
+  gap: 12px;
+  min-height: 240px;
+}
+
+.platform-row-container > .card {
+  flex: 1;
   min-width: 0;
 }
 
 .main-grid__right-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0;
   min-width: 0;
+  background: #fdfcfb;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 /* Shared card styles */
@@ -111,8 +146,13 @@
 
 /* Responsive adjustments for >=1280px */
 @media (min-width: 1280px) {
+  .content-wrapper {
+    padding: 24px 24px 24px 24px;
+  }
+
   .main-content {
-    padding: 28px 40px;
+    padding: 28px 32px;
+    margin-top: 24px;
   }
 
   .main-grid {

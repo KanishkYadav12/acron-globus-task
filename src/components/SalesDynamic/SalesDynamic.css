@@ -1,39 +1,181 @@
 /* Sales Dynamic Card */
 .sd-card {
-  background: var(--color-card);
-  border-radius: var(--radius-xl);
-  padding: 18px 20px;
-  transition: box-shadow 0.2s ease;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  padding-top: 14px;
+  margin-top: 10px;
+  box-shadow: none;
 }
 
 .sd-card:hover {
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
 }
 
 .sd-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--spacing-md, 12px);
+  margin-bottom: 8px;
+}
+
+.sd-header__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.sd-header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .sd-header__weeks {
   display: flex;
-  gap: var(--spacing-lg, 20px);
+  gap: 14px;
 }
 
 .sd-header__week {
-  font-size: var(--font-size-2xs, 11px);
-  color: var(--color-text-light, #9ca3af);
+  font-size: 10px;
+  color: #c4c4c4;
   font-weight: 500;
+  cursor: default;
+}
+
+.sd-header__expand {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.sd-header__expand:hover {
+  color: #1a1a1a;
 }
 
 .sd-chart {
-  height: 80px;
-  margin-bottom: var(--spacing-lg, 20px);
-  padding: var(--spacing-xs, 4px) 0;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 242, 242, 0.5) 0%,
+    rgba(253, 252, 251, 0) 100%
+  );
+  border-radius: 8px;
+  overflow: visible;
 }
 
 .sd-chart svg {
   overflow: visible;
+}
+
+/* Timeline Bar */
+.sd-timeline {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 12px 0;
+}
+
+.sd-timeline__bar {
+  display: flex;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sd-timeline__segment {
+  flex: 1;
+}
+
+.sd-timeline__segment--red {
+  background: linear-gradient(90deg, #c41e3a, #d4a574);
+}
+
+.sd-timeline__segment--yellow {
+  background: linear-gradient(90deg, #d4a574, #84cc16);
+}
+
+.sd-timeline__segment--orange {
+  background: linear-gradient(90deg, #84cc16, #f97316);
+}
+
+.sd-timeline__segment--green {
+  background: linear-gradient(90deg, #f97316, #22c55e);
+}
+
+.sd-timeline__markers {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.sd-marker {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.sd-marker__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sd-marker__icon--behance {
+  background: #1769ff;
+}
+
+.sd-marker__icon--google {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.sd-marker__icon--dribbble {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.sd-marker__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+}
+
+.sd-marker__badge--dribbble {
+  background: #ea4c89;
+}
+
+.sd-marker__badge--check {
+  background: #1a1a1a;
+}
+
+.sd-marker__badge--plus {
+  background: #ea4c89;
 }

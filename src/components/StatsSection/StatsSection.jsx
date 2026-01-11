@@ -61,7 +61,7 @@ function StatsSection() {
         <div className="stats-card__value">72</div>
         <div className="stats-card__subtitle">
           <span className="stats-card__avatar stats-card__avatar--green">
-            M
+            <img src="https://i.pravatar.cc/32?img=5" alt="Mikasa" />
           </span>
           <span>Mikasa</span>
           <ChevronRightIcon />

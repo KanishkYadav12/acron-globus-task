@@ -6,6 +6,7 @@ export { default as ReportHeader } from "./ReportHeader/ReportHeader";
 export { default as StatsSection } from "./StatsSection/StatsSection";
 export { default as BreakdownBar } from "./BreakdownBar/BreakdownBar";
 export { default as PlatformBreakdown } from "./PlatformBreakdown/PlatformBreakdown";
+export { default as DealsChart } from "./DealsChart/DealsChart";
 export { default as PlatformValue } from "./PlatformValue/PlatformValue";
 export { default as SalesTable } from "./SalesTable/SalesTable";
 export { default as WorkWithPlatforms } from "./WorkWithPlatforms/WorkWithPlatforms";

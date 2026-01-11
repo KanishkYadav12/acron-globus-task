@@ -69,7 +69,7 @@ function SalesRow({
 
 function SalesTable() {
   return (
-    <div className="card sales-table-card">
+    <div className="sales-table-card">
       <div className="table-header">
         <button className="filter-btn">
           Filters <FilterIcon />
@@ -84,6 +84,7 @@ function SalesTable() {
           <span>Leads</span>
           <span>KPI</span>
           <span>W/L</span>
+          <span></span>
           <span></span>
         </div>
 
@@ -104,10 +105,10 @@ function SalesTable() {
 
         <SalesRow
           avatar="M"
-          avatarColor="linear-gradient(135deg, #22c55e, #16a34a)"
+          avatarColor="linear-gradient(135deg, #EC4899, #8B5CF6)"
           name="Mikasa A."
           sales="54"
-          salesColor="#ec4899"
+          salesColor="#1a1a1a"
           revenue="$156,841"
           leads="103"
           kpi="0.89"

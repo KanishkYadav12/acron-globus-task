@@ -2,6 +2,7 @@ import React from "react";
 import {
   HomeIcon,
   GridIcon,
+  ListIcon,
   CommandIcon,
   ClipIcon,
   SettingsIcon,
@@ -16,21 +17,23 @@ function IconSidebar() {
         <button className="icon-sidebar__btn icon-sidebar__btn--muted">
           <HomeIcon />
         </button>
-        <button className="icon-sidebar__btn icon-sidebar__btn--active">
-          <GridIcon />
-        </button>
         <div className="icon-sidebar__btn-with-badge">
-          <button className="icon-sidebar__btn">
-            <CommandIcon />
+          <button className="icon-sidebar__btn icon-sidebar__btn--active">
+            <GridIcon />
           </button>
           <span className="icon-sidebar__badge">2</span>
         </div>
+        <button className="icon-sidebar__btn">
+          <ListIcon />
+        </button>
+        <button className="icon-sidebar__btn">
+          <CommandIcon />
+        </button>
         <button className="icon-sidebar__btn">
           <ClipIcon />
         </button>
       </div>
       <div className="icon-sidebar__nav-bottom">
-        <div className="icon-sidebar__notification-dot"></div>
         <button className="icon-sidebar__btn">
           <SettingsIcon />
         </button>

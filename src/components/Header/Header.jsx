@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchIcon, FilterIcon, PlusIcon } from "../../icons";
+import { SearchIcon, MenuIcon, PlusIcon } from "../../icons";
 import "./Header.css";
 
 function Header() {
@@ -15,10 +15,14 @@ function Header() {
       </div>
       <div className="header__right">
         <button className="header__icon-btn">
-          <FilterIcon />
+          <MenuIcon />
         </button>
-        <div className="header__avatar header__avatar--gold">
-          <span>🤍</span>
+        <div className="header__avatar">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=100&h=100&fit=crop"
+            alt="avatar"
+            className="header__avatar-img"
+          />
         </div>
         <button className="header__add-button">
           <PlusIcon />

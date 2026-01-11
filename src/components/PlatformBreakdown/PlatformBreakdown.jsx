@@ -81,29 +81,6 @@ function PlatformBreakdown() {
         />
         <PlatformRow icon="google" name="Google" value="$37,028" percent="7%" />
       </div>
-
-      {/* Bubble Chart */}
-      <div className="bubble-chart">
-        <div className="bubble bubble--dribbble">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-            <path d="M12 0C5.375 0 0 5.375 0 12s5.375 12 12 12 12-5.375 12-12S18.625 0 12 0zm7.938 5.5a10.18 10.18 0 0 1 2.312 6.375c-.337-.063-3.75-.75-7.187-.313-.063-.125-.125-.25-.188-.375-.187-.438-.375-.875-.562-1.313 3.75-1.5 5.438-3.687 5.625-3.937v-.437zM12 1.75c2.688 0 5.125 1 7 2.625-.188.25-1.688 2.25-5.25 3.563C12 4.75 10 2.312 9.687 1.937A10.287 10.287 0 0 1 12 1.75z" />
-          </svg>
-        </div>
-        <div className="bubble bubble--behance">Bē</div>
-        <div className="bubble bubble--instagram">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
-          </svg>
-        </div>
-        <div className="bubble bubble--google">G</div>
-        <div className="bubble bubble--clipboard">📋</div>
-      </div>
-      <div className="bubble-chart__footer">
-        <span className="bubble-chart__label">Deals amount</span>
-        <span className="bubble-chart__label-sub">
-          by referrer category <ChevronDownIcon />
-        </span>
-      </div>
     </div>
   );
 }

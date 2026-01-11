@@ -1,0 +1,116 @@
+.deals-chart {
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg) !important;
+  box-shadow: none !important;
+  padding: 12px 14px !important;
+}
+
+/* Bar Chart */
+.bar-chart {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  /* padding: 8px 12px 8px; */
+}
+.bar {
+  width: 46px;
+  border-radius: 12px;
+  display: flex;
+  padding-top: 10px;
+  align-items: start;
+  justify-content: center;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+.white-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    white,
+    white,
+    white 3px,
+    white 6px
+  );
+}
+.line-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    white,
+    white,
+    white 3px,
+    #edece9 6px
+  );
+}
+
+.bar:hover {
+  transform: translateY(-3px);
+}
+
+.bar--dribbble {
+  height: 150px;
+}
+
+.bar--dribbble svg {
+  color: #ea4c89;
+}
+
+.bar--behance {
+  height: 105px;
+  font-size: 13px;
+  color: #1769ff;
+}
+
+.bar--google {
+  height: 88px;
+}
+
+.bar--instagram {
+  height: 55px;
+}
+
+.bar--clipboard {
+  height: 115px;
+  color: #6b7280;
+}
+
+.bar-chart__footer {
+  text-align: left;
+  padding: 4px 0 0;
+}
+
+.bar-chart__label {
+  display: block;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 2px;
+}
+
+.bar-chart__label-sub {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 3px;
+  font-size: 10px;
+  /* color: #b0aba5; */
+  color: black;
+  cursor: pointer;
+}
+
+.bar-chart__label-sub:hover {
+  color: #6b7280;
+}
+
+.bar-chart__label-sub svg {
+  width: 10px;
+  height: 10px;
+}
+
+.filter-btn {
+  border: 1px solid black;
+}
